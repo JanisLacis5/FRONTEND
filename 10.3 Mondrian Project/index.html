@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mondrian Project</title>
+        <style>
+            /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+            :root {
+                --white: #f0f1ec;
+            }
+
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: 320px 198px 153px 50px;
+                grid-template-rows: 414px 130px 155px 20px;
+                gap: 9px;
+                background-color: #000;
+            }
+
+            .first {
+                background-color: red;
+                border-bottom: none;
+                border-right: none;
+            }
+
+            .second {
+                background-color: var(--white);
+                grid-column: span 3;
+                border-bottom: none;
+            }
+
+            .third {
+                background-color: var(--white);
+                grid-row: span 2;
+                border-right: none;
+            }
+
+            .fourth {
+                background-color: var(--white);
+                grid-row: span 2;
+                grid-column: span 2;
+            }
+
+            .fifth {
+                border-bottom: 10px solid #000;
+                background-color: blue;
+            }
+
+            .sixth {
+                background-color: var(--white);
+                grid-row: span 2;
+            }
+
+            .seventh {
+                background-color: var(--white);
+            }
+
+            .eighth {
+                background-color: rgb(177, 177, 25);
+            }
+
+            .ninth {
+                background-color: #232629;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Write your HTML here -->
+        <div class="container">
+            <div class="first"></div>
+            <div class="second"></div>
+            <div class="third"></div>
+            <div class="fourth"></div>
+            <div class="fifth"></div>
+            <div class="sixth"></div>
+            <div class="seventh"></div>
+            <div class="eighth"></div>
+            <div class="ninth"></div>
+        </div>
+    </body>
+</html>
